@@ -4,6 +4,6 @@
 - clone repo
 - run program with command below
 
-- ```
-  python3 guess_game.py
-  ```
+```
+python3 guess_game.py
+```
