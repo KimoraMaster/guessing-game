@@ -1,7 +1,25 @@
 import random
 
-number = random.randint(1, 10)
-guess = int(input("Guess a number between 1 and 10: "))
+#number = random.randint(1, 10)
+print("Welcome to Anthony's Guessing Game BRU")
+print("choose a difficulty")
+print("1: 1-10")
+print("2: 1-30")
+print("3: 1-99")
+
+diff = int(input("enter a diffculty between 1-3"))
+
+if diff == 1:
+    number = random.randint(1, 10)
+elif diff == 2:
+    number = random.randint(1, 30)
+elif diff == 3:
+    number = random.randint(1, 992)
+else:
+    print ("invalid option")
+    number = random.randint(1, 10)
+
+guess = int(input("Guess a number between 1 and max "))
 
 # give the user a hint.
 if guess < number:
